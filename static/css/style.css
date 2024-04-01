@@ -2,11 +2,12 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0px;
     margin: 0px;
+    user-select: none;
 }
 
 body{
     background-image: url('../images/space.jpg');
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
 
@@ -59,15 +60,16 @@ body{
 
 .bg-white {background-color: rgb(238, 238, 238)}
 .bg-black {background-color: rgb(10, 10, 10);}
+.bg-red {background-color: rgb(233, 38, 38)}
 
 .box-shaddow1 {box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
 .box-white-shaddow1 {box-shadow: rgba(231, 231, 231, 0.35) 0px 5px 15px;}
 
 /* PLANET */
 .planet{
-    padding: 10vw;
     border-radius: 100%;
     background-color: aliceblue;
+    position: fixed;
 }
 
 /* OTHERS */
@@ -81,6 +83,18 @@ body{
     #config{
         position: fixed; 
         top: 130px; 
+        right: 0px;
+        border-radius: 7px 0px 0px 7px; 
+        transition: 0.25s;
+        cursor: pointer;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    #reset{
+        position: fixed; 
+        top: 190px; 
         right: 0px;
         border-radius: 7px 0px 0px 7px; 
         transition: 0.25s;
@@ -118,8 +132,41 @@ body{
         align-items: center;
     }
 
+    #reset{
+        position: fixed; 
+        top: 70px; 
+        right: 0px;
+        border-radius: 7px 0px 0px 7px; 
+        transition: 0.25s;
+        cursor: pointer;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
 }
 
 #config:hover{
     background-color: rgb(196, 196, 196);
+}
+
+#reset:hover{
+    background-color: rgb(182, 19, 19);
+}
+
+
+.circleclick {
+    background-image: url('../images/circle.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+
+.line{
+    background-image: url('../images/meteoro.png');
+    background-repeat: repeat;
+    background-size: cover;
+    width: 45px;
+    height: 45px;
 }
